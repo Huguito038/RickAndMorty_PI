@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+.titulo{
+    font-size:70px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ff28edcb;
+    margin-top: 50px;
+    transition: all 1s ease;
+    text-shadow: 0  2px  0   #8b1577b7,
+                0  4px  0   #8b157b8f,
+                0  6px  0   #8b15819c, 
+                0  8px  0   #8b1581, 
+                0 10px  0   #8b1581,
+                0 12px  0   #8b1581,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+
+}
+
+
+.titulo:hover{
+    cursor: pointer;
+    font-size: 85px;
+}
+.hola h2{
+    font-size: 40px;
+    font-family: 'Chewy', cursive;
+}
+
+.hola h3{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Chewy', cursive;
+}
+
+.fixed{
+    position: relative;
+}
+
+.add{
+    position: absolute;
+    top: 220px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+

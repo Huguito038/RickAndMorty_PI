@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+.pass{
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: #8b70ee;
+    text-shadow: 0  2px  0   #5D29A6,
+                0  4px  0   #5D29A6,
+                0  6px  0   #5D29A6, 
+                0  8px  0   #5D29A6, 
+                0 10px  0   #5D29A6,
+                0 12px  0   #5D29A6,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+    
+}
+
+
+.email{
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    color: #8b70ee;
+    text-shadow: 0  2px  0   #5D29A6,
+                0  4px  0   #5D29A6,
+                0  6px  0   #5D29A6, 
+                0  8px  0   #5D29A6, 
+                0 10px  0   #5D29A6,
+                0 12px  0   #5D29A6,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+    
+}
+
+
+.contenedor button{
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgba(137, 81, 189, 0.856);
+    border: .25em solid var(--glow-color);
+    padding: 15px 35px;
+    color: var(--glow-color);
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    margin-top: 20px;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+
+ }
+ button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   button:hover {
+    cursor: pointer;
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);}
+
+.email p{
+    font-size: 10px;
+    color: red;
+    display: flex;
+    margin-left: 20px;
+    text-shadow: none;
+}
+
+.pass p{
+    font-size: 10px;
+    color: red;
+    display: flex;
+    margin-left: 20px;
+    text-shadow: none;
+}
+
+.input{
+    background-color: rgba(0, 0, 0, 0.438);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    border-color: none;
+
+
+    
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+.barra{
+    height: 40px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+
+.barra button{
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(116, 72, 156);
+    border: .25em solid var(--glow-color);
+    padding: 15px 35px;
+    color: var(--glow-color);
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+
+ }
+ button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   button:hover {
+    cursor: pointer;
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);}
+
+.barra input{
+    width: 300px;
+    height: 100%;
+}
+
+.SearchBar{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    color: white;
+}

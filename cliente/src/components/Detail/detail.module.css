@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.imagen_cont img{
+    width: 400px;
+    box-shadow: 15px 20px 20px #220f49;
+    border-radius: 10px;
+    transition: 1s ease all;
+    
+}
+.imagen_cont img:hover{
+    transform: scale(1.1);
+}
+.imagen_cont{
+    margin: auto;
+}
+
+.contendor{
+    display: flex;
+    margin-top: -30px;
+    justify-content: space-between;
+    width: 100%;
+    height: 553px
+    
+}
+
+
+.info_cont{
+    background: linear-gradient(#190b557a,#471f9200);
+    width: 60%;
+}
+
+.info_cont h2{
+    color: rgb(231, 231, 231);
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.info_cont h1{
+    font: bold 50px/1 arial;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #581353;
+    text-shadow: 0  2px  0   #921888,
+                0  4px  0   #921888,
+                0  6px  0   #921888, 
+                0  8px  0   #921888, 
+                0 10px  0   #921888,
+                0 12px  0   #921888,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+}

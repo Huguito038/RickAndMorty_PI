@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+.contenedor{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(#d416bb7a,#471f92);
+    margin: 20px;
+    box-shadow: 3px 8px 15px #220f49;
+    position: relative;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+}
+
+
+
+
+.titulo_2{
+    position: absolute;
+    top:250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgba(228, 171, 255, 0.932);
+    letter-spacing: 3px;}
+
+
+
+.titulo{
+    font-size: 22px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    color: #cc1dbdcb;
+    text-shadow: 0  2px  0   #8b1577b7,
+                0  4px  0   #8b157b8f,
+                0  6px  0   #8b15819c, 
+                0  8px  0   #8b1581, 
+                0 10px  0   #8b1581,
+                0 12px  0   #8b1581,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+
+}
+
+.id{
+    position: absolute;
+    top: 140px;
+    left: 0;right: 0;
+    margin: auto;
+    font: bold 50px/1 arial;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    color: #bd20b0;
+    text-shadow: 0  2px  0   #bb1eae,
+                0  4px  0   #a71b9b,
+                0  6px  0   #9e1b93, 
+                0  8px  0   #99178e, 
+                0 10px  0   #911686,
+                0 12px  0   #8b1581,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+}
+
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform:rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    
+}
+.contenedor:hover{
+    cursor: pointer;
+    transform: rotateY(-180deg);
+}
+
+
+.back img{width: 200px;
+    height: 170px;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.back Link{
+    text-decoration: none;
+}
+
+.back button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    background-color: #471f92;
+    border-radius: 5px;
+    font-size: 40px;
+    transition: all 0.5s ease;
+
+
+}
+
+.back button:hover{
+    background-color: #471f92;
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.horizontales{
+    display: flex;
+    color: rgba(203, 202, 207, 0.932);
+    letter-spacing: 2px;
+    font-size: 13px;
+    justify-content: space-around;
+    font-family: 'Creepster', cursive;
+    
+}
+
+.horizontales_abajo h2{
+    color: #230b4b;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: -8px;
+    font-family: 'Creepster', cursive;
+}
+
+.boton_fav{
+    position: absolute;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border: none;
+    right: 5px;
+    top:2px;
+    transition: all 300ms ease;
+}
+
+.boton_eliminar{
+    position: absolute;
+    background-color: transparent;
+    font-family: 'Creepster', cursive;
+    text-decoration: none;
+    font-size: 28px;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    border: none;
+    color: white;
+    left: 5px;
+    transition: all 300ms ease;
+
+}
+
+.salto{
+    padding: 8px;
+}
+
+
+.boton_fav:hover{
+    font-size: 22px;
+}
+
+.boton_eliminar:hover{
+    font-size: 29px;
+}
+
