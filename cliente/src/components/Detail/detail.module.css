@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 
 .imagen_cont img{
     width: 400px;
     box-shadow: 15px 20px 20px #220f49;
     border-radius: 10px;
+    transform: scale(1.1);
     transition: 1s ease all;
     
 }
 .imagen_cont img:hover{
-    transform: scale(1.1);
+    transform: scale(1.13);
 }
 .imagen_cont{
     margin: auto;
@@ -27,15 +30,14 @@
 
 
 .info_cont{
-    background: linear-gradient(#190b557a,#471f9200);
     width: 60%;
 }
 
 .info_cont h2{
-    color: rgb(231, 231, 231);
-    font-family: 'Roboto Slab', serif;
-    font-size: 35px;
-    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    letter-spacing: 6px;
 }
 
 .info_cont h1{

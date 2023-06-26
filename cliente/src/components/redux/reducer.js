@@ -21,21 +21,14 @@ const reducer = (state = InitialState,{type, payload}) =>{
                      ...state,
                      myFavorites: copyFilter
                     }
-        case "ORDER":
-            const orderCharacters = state.allCharactersFav.sort((a, b)=>{
-                if(payload === "A"){
-                     if(a.id < b.id) return -1;
-                     if(b.id < a.id) return 1;
-                     return 0
-                } else {
-                     if(a.id < b.id) return 1;
-                     if(b.id < a.id) return -1
-                     return 0
-                    }
-                })
-                return {
+        case "ORDER": //! agregue case completo
+                const allCharactersFavCopy = [...state.allCharactersFav]
+                return{
                     ...state,
-                    myFavorites: [...orderCharacters]
+                    myFavorites: 
+                    payload === "A"
+                    ? allCharactersFavCopy.sort((a,b)=> a.id - b.id)
+                    :allCharactersFavCopy.sort((a,b)=>b.id - a.id)
                 }
         default: 
         return{...state}

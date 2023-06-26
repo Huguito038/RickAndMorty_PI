@@ -5,8 +5,8 @@ const About= ()=>{
             <div className={stilos.fixed}>
                  <h2>Aplicacion creada por:</h2>
                  <div className={stilos.add}>
-                    <h3>Cohorte: 38-a</h3>    
-                    <h3>Grupo: 03</h3>
+                    <h3>Cohorte: 39-a</h3>    
+                    <h3>Grupo: 01</h3>
                  </div>
                 <p className={stilos.titulo}>Hugo Soler</p>
             </div>

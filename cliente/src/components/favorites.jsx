@@ -1,15 +1,14 @@
 import {connect} from "react-redux"
 import Card from "../components/Card/Card";
 import Stilos from "./Cards/Cards.module.css"
-import { filterCards, orderCards,} from "./redux/actions";
-import { useDispatch, useSelector} from "react-redux";
+import { filterCards, orderCards,removeFav} from "./redux/actions";
+import { useDispatch,} from "react-redux";
 import { useState } from "react";
 
 
 
-const Favorites = ()=>{
-
-    const {myFavorites} = useSelector((state) => state)
+const Favorites = ({myFavorites})=>{
+    
 
     const [state, setAux] = useState(false)
 
@@ -71,5 +70,6 @@ const mapStateToProps = (state)=>{
     }
 
 }
+
 
 export default connect(mapStateToProps,null)(Favorites)
