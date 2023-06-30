@@ -1,47 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
 
 
 
 .pass{
-    font-size: 36px;
-    letter-spacing: 3px;
-    font-family: 'Press Start 2P', cursive;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    color: #8b70ee;
-    text-shadow: 0  2px  0   #5D29A6,
-                0  4px  0   #5D29A6,
-                0  6px  0   #5D29A6, 
-                0  8px  0   #5D29A6, 
-                0 10px  0   #5D29A6,
-                0 12px  0   #5D29A6,
-                3px 8px 15px rgba(0,0,0,0.1),
-                3px 8px  5px rgba(0,0,0,0.3);
-    
-}
-
-
-.email{
     font-size: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     padding: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Press Start 2P', cursive;
-    text-transform: uppercase;
-    color: #8b70ee;
-    text-shadow: 0  2px  0   #5D29A6,
-                0  4px  0   #5D29A6,
-                0  6px  0   #5D29A6, 
-                0  8px  0   #5D29A6, 
-                0 10px  0   #5D29A6,
-                0 12px  0   #5D29A6,
-                3px 8px 15px rgba(0,0,0,0.1),
-                3px 8px  5px rgba(0,0,0,0.3);
+    font-family: 'Belanosima', sans-serif;
+    background: linear-gradient(rgb(210, 96, 238),rgb(30, 26, 236));
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+
+.email{
+    font-size: 28px;
+    letter-spacing: 6px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Belanosima', sans-serif;
+    background: linear-gradient(rgb(210, 96, 238),rgb(30, 26, 236));
+    -webkit-background-clip: text;
+    color: transparent; 
+    
     
 }
 
@@ -107,6 +95,7 @@
     font-size: 10px;
     color: red;
     display: flex;
+    
     margin-left: 20px;
     text-shadow: none;
 }
@@ -122,3 +111,52 @@
 
     
 }
+
+.login{
+    font-size: 40px;
+    letter-spacing: 10px;
+    display: flex;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    color: #8b74dd;
+    text-shadow: 0  2px  0   #5c28a5,
+                0  4px  0   #5D29A6,
+                0  6px  0   #5D29A6, 
+                0  8px  0   #5D29A6, 
+                0 10px  0   #5D29A6,
+                0 12px  0   #5D29A6,
+                3px 8px 15px rgba(0,0,0,0.1),
+                3px 8px  5px rgba(0,0,0,0.3);
+                
+
+}
+
+.ing{width: 350px;
+    position: absolute ;
+    top: 100px;
+    left:  30px;}
+
+
+.carta{backdrop-filter: blur(5px);
+width: 600px;
+height: 100%;
+border: 2px solid rgba(233, 126, 255, 0.322);
+border-radius: 40px;
+top: 0;
+right: 0;
+left: 0;
+margin: auto;
+margin-top: 20px;
+box-shadow: 3px 8px 15px #220f49;
+}
+
+.space{
+    margin: 30px;
+    color: transparent;
+
+}
+
+.register{font-size: 15px;display:block;font-family: 'Belanosima', sans-serif;}

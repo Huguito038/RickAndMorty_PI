@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 
-const Favorites = ({myFavorites})=>{
+const Favorites = ({myFavorites,onClose})=>{
     
 
     const [state, setAux] = useState(false)

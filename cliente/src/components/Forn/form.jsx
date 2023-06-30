@@ -1,7 +1,7 @@
 import estilo from "./form.module.css"
 import { useState } from "react"
 import validations from "../validations"
-import titulo_img from "../Forn/image.png"
+import axios from "axios"
 
 const Form = ({login})=>{
 
@@ -22,7 +22,9 @@ const Form = ({login})=>{
 
     return (
         <div className={estilo.contenedor}>
-            <img src={titulo_img} alt="" />
+            <div className={estilo.carta}>
+                <h3 className={estilo.space}>...</h3>
+                 <h3 className={estilo.login}>Login</h3>
             <form>
                 <div className={estilo.email}>
                     <label htmlFor="email" className=""> Email:</label>
@@ -36,7 +38,10 @@ const Form = ({login})=>{
                     {errors.pass1 ? (<p>{errors.pass1}</p>):(<p>{errors.pass2}</p>)}
                 </div>
                 <button onClick={handleSubmit} type="submit">SUBMIT</button>
+                <h3 className={estilo.space}>...</h3>
             </form>
+            </div>
+           
         </div>
             
     )
