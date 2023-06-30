@@ -6,7 +6,7 @@ const morgan = require("morgan")
 const {conn} = require("./DB_connection")
 
 
-conn.sync({force:false})
+conn.sync({force:true})
 server.use(express.json())
 server.use(morgan("dev"))
 

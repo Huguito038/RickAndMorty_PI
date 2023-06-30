@@ -84,18 +84,21 @@
            inset 0 0 .5em .25em var(--glow-color);}
 
 .email p{
-    font-size: 10px;
-    color: red;
+    font-size: 15px;
+    color: rgb(112, 26, 26);
+    position: absolute;
+    margin-top: 100px;
     display: flex;
     margin-left: 20px;
     text-shadow: none;
 }
 
 .pass p{
-    font-size: 10px;
-    color: red;
+    font-size: 15px;
+    color: rgb(112, 26, 26);
     display: flex;
-    
+    position: absolute;
+    margin-top: 100px;
     margin-left: 20px;
     text-shadow: none;
 }

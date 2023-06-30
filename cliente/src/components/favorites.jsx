@@ -43,7 +43,7 @@ const Favorites = ({myFavorites,onClose})=>{
             </select>
 
          <div className={Stilos.contenedor}>
-          {myFavorites?.map(({id,name,status,species,gender,origin,image,onClose})=>{
+          {myFavorites?.map(({id,name,status,species,gender,origin,image})=>{
               return (
                  <Card 
                  key = {id}
@@ -54,7 +54,7 @@ const Favorites = ({myFavorites,onClose})=>{
                  gender = {gender}
                  origin = {origin}
                  image = {image}
-                 onClose={onClose}
+                 onClose={()=>onClose(id)}
                  />
               )
            })}   
